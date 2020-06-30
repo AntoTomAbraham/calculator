@@ -143,7 +143,8 @@ def percentage():
     val = val / 100
     data.set(val)
 def e():
-    val = 2.71828
+    global val
+    val = val + "2.71828"
     data.set(val)
 def result():
     global a
@@ -151,22 +152,22 @@ def result():
     global val
     vall = val
     if operator == "+":
-        x = int((vall.split("+")[1]))
+        x = float((vall.split("+")[1]))
         c=a+x
         data.set(c)
         val=str(c)
     if operator == "*":
-        x = int((vall.split("x")[1]))
+        x = float((vall.split("x")[1]))
         c=a*x
         data.set(c)
         val=str(c)
     if operator == "/":
-        x = int((vall.split("/")[1]))
+        x = float((vall.split("/")[1]))
         c=a/x
         data.set(c)
         val=str(c)
     if operator == "-":
-        x = int((vall.split("-")[1]))
+        x = float((vall.split("-")[1]))
         c=a-x
         data.set(c)
         val=str(c)
