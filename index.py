@@ -142,24 +142,14 @@ def percentage():
     val=int(val)
     val = val / 100
     data.set(val)
-def mod():
-    global a
-    global operator
-    global val
-    a=int(val)
-    operator ="mod"
-    val = val + ".mod"
+def e():
+    val = 2.71828
     data.set(val)
 def result():
     global a
     global operator
     global val
     vall = val
-    if operator == mod:
-        x = int((vall.split("mod")[1]))
-        c = a // x
-        data.set(c)
-        val = str(c)
     if operator == "+":
         x = int((vall.split("+")[1]))
         c=a+x
@@ -231,7 +221,7 @@ btn2=Button(row3,text="2",bg="#c0c0c0",borderwidth=0,relief=FLAT,font=("verdana"
 btn2.pack(side=LEFT,expand= True,fill="both")
 btn3=Button(row3,text="3",bg="#c0c0c0",borderwidth=0,relief=FLAT,font=("verdana",22),command=btn3)
 btn3.pack(side=LEFT,expand= True,fill="both")
-btnp=Button(row3,text="+  ",borderwidth=0,bg="#c0c0c0",relief=FLAT,font=("verdana",11),command=btnplus)
+btnp=Button(row3,text="+ ",borderwidth=0,bg="#c0c0c0",relief=FLAT,font=("verdana",11),command=btnplus)
 btnp.pack(side=LEFT,expand= True,fill="both")
 btn6=Button(row3,text="tan  ",borderwidth=0,relief=FLAT,bg="#c0c0c0",font=("verdana",11),command=tan)
 btn6.pack(side=LEFT,expand= True,fill="both")
@@ -241,9 +231,9 @@ btnd=Button(row4,text=" /",borderwidth=0,relief=FLAT,bg="#c0c0c0",font=("verdana
 btnd.pack(side=LEFT,expand= True,fill="both")
 btno=Button(row4,text="  0",borderwidth=0,relief=FLAT,bg="#c0c0c0",font=("verdana",22),command=btn0)
 btno.pack(side=LEFT,expand= True,fill="both")
-btnoo=Button(row4,text=" 00",borderwidth=0,relief=FLAT,bg="#c0c0c0",font=("verdana",22),command=btn00)
+btnoo=Button(row4,text="00 ",borderwidth=0,relief=FLAT,bg="#c0c0c0",font=("verdana",22),command=btn00)
 btnoo.pack(side=LEFT,expand= True,fill="both")
-btndo=Button(row4,text=".",borderwidth=0,relief=FLAT,bg="#c0c0c0",font=("verdana",15),command=flot)
+btndo=Button(row4,text=". ",borderwidth=0,relief=FLAT,bg="#c0c0c0",font=("verdana",15),command=flot)
 btndo.pack(side=LEFT,expand= True,fill="both")
 btneq=Button(row4,text=" rad",borderwidth=0,bg="#c0c0c0",relief=FLAT,font=("verdana",11),command=rad)
 btneq.pack(side=LEFT,expand= True,fill="both")
@@ -253,12 +243,12 @@ btn22=Button(row5,text="x2",borderwidth=0,bg="#c0c0c0",relief=FLAT,font=("verdan
 btn22.pack(side=LEFT,expand= True,fill="both")
 btn33=Button(row5,text="x3",borderwidth=0,bg="#c0c0c0",relief=FLAT,font=("verdana",11),command=x3)
 btn33.pack(side=LEFT,expand= True,fill="both")
-btnsq=Button(row5,text="C",borderwidth=0,bg="#c0c0c0",relief=FLAT,font=("verdana",11),command=btnc)
+btnsq=Button(row5,text=" C",borderwidth=0,bg="#c0c0c0",relief=FLAT,font=("verdana",11),command=btnc)
 btnsq.pack(side=LEFT,expand= True,fill="both")
-btnpr=Button(row5,text="%",borderwidth=0,bg="#c0c0c0",relief=FLAT,font=("verdana",11),command=percentage)
+btnpr=Button(row5,text="    %",borderwidth=0,bg="#c0c0c0",relief=FLAT,font=("verdana",11),command=percentage)
 btnpr.pack(side=LEFT,expand= True,fill="both")
 btnsq=Button(row5,text="  x^y",borderwidth=0,bg="#c0c0c0",relief=FLAT,font=("verdana",11))
 btnsq.pack(side=LEFT,expand= True,fill="both")
-btnpr=Button(row5,text="mod",borderwidth=0,relief=FLAT,bg="#c0c0c0",font=("verdana",11),command=mod)
+btnpr=Button(row5,text="e",borderwidth=0,relief=FLAT,bg="#c0c0c0",font=("verdana",11),command=e)
 btnpr.pack(side=LEFT,expand= True,fill="both")
 base.mainloop()
