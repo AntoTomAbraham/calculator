@@ -34,7 +34,7 @@ def btn7():
     data.set(val)
 def flot():
     global val
-    val = val+"."
+    val = val +"."
     data.set(val)
 def btn8():
     global val
@@ -250,6 +250,6 @@ btnpr=Button(row5,text="e",borderwidth=0,bg="#c0c0c0",relief=FLAT,font=("verdana
 btnpr.pack(side=LEFT,expand= True,fill="both")
 btnsq=Button(row5,text="x^y",borderwidth=0,bg="#c0c0c0",relief=FLAT,font=("verdana",11))
 btnsq.pack(side=LEFT,expand= True,fill="both")
-btnpr=Button(row5,text=".",borderwidth=0,relief=FLAT,bg="#c0c0c0",font=("verdana",11),command=float)
+btnpr=Button(row5,text=".",borderwidth=0,relief=FLAT,bg="#c0c0c0",font=("verdana",11),command=flot)
 btnpr.pack(side=LEFT,expand= True,fill="both")
 base.mainloop()
