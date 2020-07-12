@@ -130,7 +130,7 @@ def deg():
 def x2():
     global val
     val=int(val)
-    val = val*val*val
+    val = val*val
     data.set(val)
 def x3():
     global val
@@ -224,17 +224,17 @@ btn3=Button(row3,text="3",bg="#c0c0c0",borderwidth=0,relief=FLAT,font=("verdana"
 btn3.pack(side=LEFT,expand= True,fill="both")
 btnp=Button(row3,text="+",borderwidth=0,bg="#c0c0c0",relief=FLAT,font=("verdana",11),command=btnplus)
 btnp.pack(side=LEFT,expand= True,fill="both")
-btn6=Button(row3,text="tan  ",borderwidth=0,relief=FLAT,bg="#c0c0c0",font=("verdana",11),command=tan)
+btn6=Button(row3,text="tan",borderwidth=0,relief=FLAT,bg="#c0c0c0",font=("verdana",11),command=tan)
 btn6.pack(side=LEFT,expand= True,fill="both")
 btni=Button(row3,text="n!",borderwidth=0,relief=FLAT,bg="#c0c0c0",font=("verdana",11),command=factorial)
 btni.pack(side=LEFT,expand= True,fill="both")
 btnd=Button(row4,text="/",borderwidth=0,relief=FLAT,bg="#c0c0c0",font=("verdana",15),command=btndiv)
 btnd.pack(side=LEFT,expand= True,fill="both")
-btno=Button(row4,text="0",borderwidth=0,relief=FLAT,bg="#c0c0c0",font=("verdana",22),command=btn0)
+btno=Button(row4,text="  0",borderwidth=0,relief=FLAT,bg="#c0c0c0",font=("verdana",22),command=btn0)
 btno.pack(side=LEFT,expand= True,fill="both")
-btnoo=Button(row4,text="00",borderwidth=0,relief=FLAT,bg="#c0c0c0",font=("verdana",22),command=btn00)
+btnoo=Button(row4,text="00",borderwidth=0,relief=FLAT,bg="#c0c0c0",font=("verdana",20),command=btn00)
 btnoo.pack(side=LEFT,expand= True,fill="both")
-btndo=Button(row4,text=".",borderwidth=0,relief=FLAT,bg="#c0c0c0",font=("verdana",15),command=flot)
+btndo=Button(row4,text="%",borderwidth=0,relief=FLAT,bg="#c0c0c0",font=("verdana",11),command=percentage)
 btndo.pack(side=LEFT,expand= True,fill="both")
 btneq=Button(row4,text="rad",borderwidth=0,bg="#c0c0c0",relief=FLAT,font=("verdana",11),command=rad)
 btneq.pack(side=LEFT,expand= True,fill="both")
@@ -246,10 +246,10 @@ btn33=Button(row5,text="x3",borderwidth=0,bg="#c0c0c0",relief=FLAT,font=("verdan
 btn33.pack(side=LEFT,expand= True,fill="both")
 btnsq=Button(row5,text="C",borderwidth=0,bg="#c0c0c0",relief=FLAT,font=("verdana",11),command=btnc)
 btnsq.pack(side=LEFT,expand= True,fill="both")
-btnpr=Button(row5,text="%",borderwidth=0,bg="#c0c0c0",relief=FLAT,font=("verdana",11),command=percentage)
+btnpr=Button(row5,text="e",borderwidth=0,bg="#c0c0c0",relief=FLAT,font=("verdana",11),command=e)
 btnpr.pack(side=LEFT,expand= True,fill="both")
 btnsq=Button(row5,text="x^y",borderwidth=0,bg="#c0c0c0",relief=FLAT,font=("verdana",11))
 btnsq.pack(side=LEFT,expand= True,fill="both")
-btnpr=Button(row5,text="e",borderwidth=0,relief=FLAT,bg="#c0c0c0",font=("verdana",11),command=e)
+btnpr=Button(row5,text=".",borderwidth=0,relief=FLAT,bg="#c0c0c0",font=("verdana",11),command=float)
 btnpr.pack(side=LEFT,expand= True,fill="both")
 base.mainloop()
